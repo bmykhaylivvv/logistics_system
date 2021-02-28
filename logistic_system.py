@@ -20,7 +20,7 @@ class LogisticSystem:
         Register an order to the order list if there is available vehicle.
         '''
         for vehicle in self.vehicles:
-            if vehicle.isAvailable == True:
+            if vehicle.isAvailable:
                 self.orders.append(order)
                 vehicle.isAvailable = False
                 return "Your order successfully added to our list"
